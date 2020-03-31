@@ -1,0 +1,19 @@
+{
+    "extends": ["airbnb", "prettier"],
+    "plugins": ["prettier"],
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "rules": {
+        "no-var": "error",
+        "semi": "off",
+        "func-style": "error",
+        "no-console": "error",
+        "no-unused-expressions": "off",
+        "no-plusplus": "error"
+    }
+}
