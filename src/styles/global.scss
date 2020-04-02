@@ -1,18 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: $white;
+    font-family: "Montserrat", sans-serif;
+    color: $dark;
+    height: 100%;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: normal;
 }
 
 .container {
-    height: 100vh;
+    background-color: transparent;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+}
 
-    h1, h3, h5 {
-        width: 100%;
-        text-align: center;
-    }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.col-4 {
+    max-width: 25%;
+    width: 100%;
+    flex: 0 0 25%;
+    position: relative;
+}
+
+.absolute-position {
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    font-size: 50px;
+    color: rgba(175, 0, 27, 0.3);
 }
 
 .border {
@@ -47,10 +82,95 @@ body {
     background-color: $secondary;
 }
 
+.bg-dark {
+    background-color: $dark-100;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .horizontal-rule {
     border: 1px solid $dark-100;
 }
 
 .font-weight-bold {
     font-weight: 500;
+}
+
+.text-primary {
+    color: $primary;
+}
+
+.text-secondary {
+    color: $secondary;
+}
+
+.text-dark {
+    color: $dark;
+}
+
+.fas,
+.fab,
+.fa {
+    font-size: 20px;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.vh-75 {
+    height: 75vh;
+}
+
+.px {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.p {
+    padding: 20px;
+}
+
+.icon--brand {
+    position: absolute;
+    right: 25px;
+    top: 9px;
+}
+
+.form--container {
+    position: relative;
+}
+
+.justify-item-center {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .col-4 {
+        max-width: 50%;
+        width: 100%;
+        flex: 0 0 50%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .col-md-4 {
+        max-width: 90%;
+        width: 100%;
+        flex: 0 0 90%;
+        position: relative;
+    }
+
+    .vh-90 {
+        height: 90vh;
+    }
 }
