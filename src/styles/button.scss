@@ -1,0 +1,51 @@
+.btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $dark;
+    background-color: transparent;
+    border: 2px solid transparent;
+    &:hover {
+        outline: none;
+    }
+}
+
+.btn-sm {
+    width: 185px;
+    height: 36px;
+    font-size: 16px;
+    border-width: 1px;
+}
+
+.btn-outline-primary {
+    border: 1px solid $primary;
+}
+
+.btn-outline-secondary {
+    border: 1px solid $secondary;
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: $white;
+    border-color: $primary;
+    &:hover {
+        border-width: 2px;
+        background-color: darken($color: $primary, $amount: 3);
+        border-color: lighten($color: $primary, $amount: 7);
+    }
+
+}
+
+.btn-secondary {
+    background-color: $secondary;
+    color: $white;
+    border-color: $secondary;
+    &:hover {
+        border-width: 2px;
+        background-color: darken($color: $secondary, $amount: 7);
+        border-color: lighten($color: $secondary, $amount: 5);
+    }
+}
