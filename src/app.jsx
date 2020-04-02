@@ -15,6 +15,7 @@ const App = () => {
                 </h1>
                 <h3>Let's keep the dice rolling</h3>
                 <h5>Oooo kana &#129322;</h5>
+                <button className="btn btn-primary" type="button">btn</button>
             </div>
         </React.Fragment>
     );

@@ -1,0 +1,12 @@
+.form-control {
+    width: 298px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid $primary;
+    color: $dark-100;
+    padding: 10px 15px;
+    &:focus {
+        color: $dark;
+        border-color: darken($color: $primary, $amount: 3);
+    }
+}

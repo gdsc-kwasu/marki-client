@@ -33,7 +33,8 @@
         "no-plusplus": 2,
         "react/prop-types": 0,
         "react/jsx-fragments": 0,
-        "react/no-unescaped-entities": 0
+        "react/no-unescaped-entities": 0,
+        "react/prefer-stateless-function": 0
     },
     "settings": {
         "react": {
