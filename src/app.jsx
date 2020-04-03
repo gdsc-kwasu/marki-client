@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/app.scss";
-import Search from "./components/search";
+import SearchPage from "./components/SearchPage";
 
 const App = () => {
     return (
         <React.Fragment>
-            <Search />
+            <SearchPage />
         </React.Fragment>
     );
 };

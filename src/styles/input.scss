@@ -13,8 +13,16 @@
     }
 }
 
-.form-large {
-    width: 280px;
+.form--large {
+    width: 380px;
     height: 40px;
     padding: 10px 50px 10px 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .form--large {
+        width: 300px;
+    }
+}
+
+

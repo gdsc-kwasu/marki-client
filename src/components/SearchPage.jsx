@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Search extends Component {
+class SearchPage extends Component {
     constructor (props) {
         super (props);
         this.state = {
@@ -18,17 +18,23 @@ class Search extends Component {
         return (
             <React.Fragment>
                 <div className="container bg-dark vh-100">
-                    <div className="absolute-position">marki.io</div>
-                    <div className="row vh-75 vh-90">
-                        <div className="col-4 col-md-4 bg-white shadow px">
+                    <div className="position--absolute">marki.io</div>
+                    <div className="row vh-75 vh-sm-100">
+                        <div className="col-4 col-sm-12 col-md-6 bg-white shadow shadow-sm-none px">
                             <h3 className="text-primary">marki.io</h3>
                             <div className="form--container justify-item-center">
                                 <input
                                     type="text"
-                                    className="form-control form-large"
+                                    className="form-control form--large datalist"
+                                    list="names"
+                                    placeholder="Search Student"
                                     value={search}
                                     onChange={this.handleInput}
                                 />
+                                <datalist id="names">
+                                    <option value="Strawberry">Strawberry</option>
+                                    <option value="Watermelon">Watermelon</option>
+                                </datalist>
                                 <i className="fas fa-microphone text-primary icon--brand"></i>
                             </div>
                         </div>
@@ -39,4 +45,4 @@ class Search extends Component {
     }
 }
 
-export default Search;
+export default SearchPage;
