@@ -8,6 +8,7 @@
     background-color: transparent;
     border: 2px solid transparent;
     outline: none;
+    opacity: 1;
     &:hover {
         outline: none;
         cursor: pointer;
@@ -27,6 +28,8 @@
 
 .btn-outline-secondary {
     border: 1px solid $secondary;
+    color: $secondary;
+
 }
 
 .btn-primary {

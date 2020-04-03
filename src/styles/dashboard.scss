@@ -1,0 +1,36 @@
+.user--avatar {
+    width: 70px;
+    height: 70px;
+}
+
+.user--name {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+td span {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid $primary;
+    border-radius: 50%;
+}
+
+.checked {
+    background-color: $primary;
+}
+
+@media screen and (max-width: 576px) {
+    table {
+        border-spacing: 30px;
+    }
+}
