@@ -20,7 +20,8 @@
     max-width: 33.3333%;
     width: 100%;
     flex: 0 0 33.3333%;
-    position: relative;
+    position: absolute;
+    overflow: hidden;
 }
 
 .vh-100 {
@@ -43,6 +44,38 @@
 .marki {
     width: 41px;
     height: 10px;
+}
+
+
+
+.outer-circle {
+    position: absolute;
+    width: 498px;
+    height: 498px;
+    left: -155px;
+    top: 96px;
+    border-radius: 50%;
+    background: lighten($color: rgba(171, 220, 250, 0.2), $amount: 13);
+}
+
+.inner-circle {
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    left: 55px;
+    top: 200px;
+    border-radius: 50%;
+    background: lighten($color: #FFF3F5, $amount: 1);
+}
+
+.innermost-circle {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: 75px;
+    top: 220px;
+    border-radius: 50%;
+    background: lighten($color: #FFF3F5, $amount: 1.6);
 }
 
 @media screen and (max-width: 768px) {

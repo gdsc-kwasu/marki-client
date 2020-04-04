@@ -2,7 +2,7 @@ import React from "react";
 
 const AttendanceTable = () => {
     return (
-        <table className="px">
+        <table className="px z-index">
             <tr>
                 <td>
                     <span className="checked"></span>

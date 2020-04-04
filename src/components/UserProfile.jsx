@@ -4,6 +4,7 @@ import Avatar from "../images/avatar.png";
 const UserProfile = () => {
     return (
         <React.Fragment>
+            <div className="z-index">
             <div className="user--profile mt">
                 <img
                     src={Avatar}
@@ -28,6 +29,7 @@ const UserProfile = () => {
             >
                 Present
             </button>
+            </div>
         </React.Fragment>
     );
 };
