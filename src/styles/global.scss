@@ -15,35 +15,12 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-weight: 500;
 }
 p {
     margin-top: 0;
     font-weight: 100;
-}
-
-.container {
-    background-color: transparent;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-
-.col-4 {
-    max-width: 33.3333%;
-    width: 100%;
-    flex: 0 0 33.3333%;
-    position: relative;
 }
 
 .border {
@@ -112,14 +89,6 @@ p {
     font-size: 20px;
 }
 
-.vh-100 {
-    height: 100vh;
-}
-
-.vh-80 {
-    height: 80vh;
-}
-
 .px {
     padding-left: 20px;
     padding-right: 20px;
@@ -151,30 +120,15 @@ p {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    .col-md-6 {
-        max-width: 50%;
-        width: 100%;
-        flex: 0 0 50%;
-        position: relative;
-    }
-    .vh-md-90 {
-        height: 90vh;
-    }
+.ml {
+    margin-left: 5px;
+}
+
+.position--relative {
+    position: relative;
 }
 
 @media screen and (max-width: 576px) {
-    .col-sm-12 {
-        max-width: 100%;
-        width: 100%;
-        flex: 0 0 100%;
-        position: relative;
-    }
-
-    .vh-sm-100 {
-        height: 100vh;
-    }
-
     .shadow-sm-none {
         box-shadow: none;
     }

@@ -1,0 +1,44 @@
+.selection--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33%;
+}
+.icon--brandname {
+    position: absolute;
+    top: 18px;
+    right: 30px;
+    z-index: 0;
+}
+
+select {
+    background-color: $white;
+    color: $dark-200;
+    -webkit-appearance: none;
+    background: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 330px;
+    background-size: 20px;
+}
+
+.form-group {
+    height: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 576px) {
+    .selection--container {
+        margin-top: 50%;
+    }
+    select {
+        background-position: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    select {
+        background-position: 250px;
+    }
+}
