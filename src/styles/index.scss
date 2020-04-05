@@ -1,0 +1,102 @@
+.top--brand {
+    margin-right: 68%;
+    margin-top: .6%;
+}
+
+.ellipse-1  {
+    height: 570px;
+}
+
+.ellipse-2  {
+    height: 620px;
+}
+
+.ellipses .ellipse-1 {
+    margin-top: -65%;
+}
+
+.ellipses .ellipse-2 {
+    margin-top: 2%;
+}
+
+.people--main .people {
+    margin-top: 22%;
+}
+
+.flex {
+    display: flex;
+}
+
+.landing-description {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -1%;
+}
+
+.landing-description p {
+    font-size: 44px;
+    width: 58%;
+    font-weight: normal;
+}
+
+.landing-description .sign-in {
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+.login {
+    color: #AF001B;
+}
+
+.register {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+@media screen and (max-width: 576px) {
+    .ellipse-1 {
+        height: 50px;
+    }
+
+    .ellipse-2 {
+        height: 100px;
+        margin-top: 50%;
+    }
+
+    .people {
+        height: 120px;
+        margin-left: 26%;
+    }
+
+    .top--brand {
+        height: 38px;
+        width: 50px;
+    }
+
+    .landing-description {
+        margin-top: 90%;
+        margin-left: 7%;
+    }
+
+    .landing-description p {
+        font-size: 18px;
+        width: 100%;
+        font-weight: normal;
+    }
+
+    .landing-description .sign-in {
+        font-size: 11px;
+        margin-top: 5%;
+    }
+
+    .btn {
+        width: 100%;
+        height: 35px;
+        border-radius: 4px;
+    }
+
+    .register {
+        font-size: 19px;
+    }
+}
