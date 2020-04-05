@@ -6,7 +6,7 @@
     "scripts": {
         "format": "prettier \"src/**/*.{js,html,css}\" --write",
         "lint": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
-        "dev": "parcel src/index.html",
+        "dev": "parcel src/index.html --open",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {

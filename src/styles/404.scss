@@ -1,0 +1,26 @@
+.error-description {
+    position: absolute;
+    margin-top: 20%;
+    width: 56%;
+}
+
+.error-description h3 {
+    font-size: 44px;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .ellipses {
+        display: block;
+    }
+    
+    .error-description {
+        margin-top: 70%;
+        margin-left: 18%;
+        width: 100%;
+    }
+
+    .error-description h3 {
+        font-size: 20px;
+    }
+}

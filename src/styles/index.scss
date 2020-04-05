@@ -1,0 +1,237 @@
+.top--brand {
+    margin-right: 68%;
+    margin-top: .6%;
+}
+
+.ellipse-1  {
+    height: 570px;
+}
+
+.ellipse-2  {
+    height: 620px;
+}
+
+.ellipses .ellipse-1 {
+    margin-top: -65%;
+}
+
+.ellipses .ellipse-2 {
+    margin-top: 2%;
+}
+
+.people--main .people {
+    margin-top: 22%;
+}
+
+.flex {
+    display: flex;
+}
+
+// landing
+
+.landing-description {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -1%;
+}
+
+.landing-description p {
+    font-size: 44px;
+    width: 58%;
+    font-weight: normal;
+}
+
+.landing-description .sign-in {
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+.login {
+    color: #AF001B;
+}
+
+.register {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+// landing ends here
+
+// Register starts here
+.register-description {
+    margin-left: -35%;
+    margin-top: 3%;
+}
+
+.register-description .text-primary {
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.register-description .brief {
+    width: 583px;
+    height: 37px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+form {
+    margin-top: 7%;
+}
+
+.form--control {
+    width: 571.61px;
+    height: 58px;
+    background: $white;
+    border: 1px solid $primary;
+    border-radius: 7px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    padding: 0 10px 0 25px;
+    outline: none;
+}
+
+.pwd-details {
+    font-size: 14px;
+    color: $primary;
+    font-weight: normal;
+}
+
+.fa-eye {
+    margin-left: -6%;
+    color: $primary;
+}
+
+.sign-in {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 1%;
+}
+
+.signUp-btn {
+    margin-top: 4%;
+    font-size: 28px;
+    border-radius: 7px;
+}
+// Register stops here
+
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 50%;
+    }
+    
+    .ellipse-1 {
+        height: 50px;
+    }
+
+    .ellipse-2 {
+        height: 100px;
+        margin-top: 50%;
+    }
+
+    .people {
+        height: 120px;
+        margin-left: 26%;
+    }
+
+    .top--brand {
+        height: 20px;
+        width: 40px;
+    }
+
+    .landing-description {
+        margin-top: 90%;
+        margin-left: 7%;
+    }
+
+    .landing-description p {
+        font-size: 18px;
+        width: 100%;
+        font-weight: normal;
+    }
+
+    .landing-description .sign-in {
+        font-size: 11px;
+        margin-top: 5%;
+    }
+
+    .btn {
+        width: 100%;
+        height: 35px;
+        border-radius: 4px;
+    }
+
+    // Register
+    .register-description {
+        margin-left: 10%;
+        margin-top: 23%;
+        width: 100%;
+    }
+
+    .register-description .text-primary {
+        margin-left: 5%;
+        font-size: 18px;
+        width: 170px;
+    }
+
+    .register-description .brief {
+        width: 200px;
+        height: 18px;
+        margin-left: 5%;
+        margin-top: -6%;
+        font-size: 10px;
+    }
+
+    .register {
+        font-size: 19px;
+    }
+
+    form {
+        margin-top: 16%;
+        width: 100%;
+        margin-left: -8%;
+    }
+
+    .form--control {
+        width: 100%;
+        margin-left: 2%;
+        width: 200px;
+        height: 28px;
+        border-radius: 3px;
+        margin-left: 13%;
+    }
+
+    .fa-eye {
+        margin-left: -10%;
+        font-size: 13px;
+    }
+
+    form .label {
+        width: 120px;
+        font-size: 8px;
+        margin-left: 13%;
+    }
+
+    .sign-in {
+        margin-left: 12%;
+        font-size: 11px;
+        width: 200px;
+    }
+
+    .pwd-details {
+        font-size: 8px;
+        margin-left: 13%;
+        width: 200px;
+    }
+
+    .signUp-btn {
+        width: 200px;
+        height: 29px;
+        border-radius: 4px;
+        margin-left: 13%;
+        font-size: 16px;
+    }
+
+}
