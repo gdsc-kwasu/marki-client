@@ -4,12 +4,13 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 33%;
+    margin-top: 40%;
 }
+
 .icon--brandname {
     position: absolute;
     top: 18px;
-    right: 30px;
+    right: 40px;
     z-index: 0;
 }
 
@@ -19,7 +20,7 @@ select {
     -webkit-appearance: none;
     background: url(../images/arrow.png);
     background-repeat: no-repeat;
-    background-position: 330px;
+    background-position: 300px;
     background-size: 20px;
 }
 
@@ -28,17 +29,33 @@ select {
     position: relative;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
     .selection--container {
         margin-top: 50%;
     }
     select {
-        background-position: 250px;
+        background-position: 440px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+    .selection--container {
+        margin-top: 30%;
+    }
     select {
-        background-position: 250px;
+        background-position: 320px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .selection--container {
+        margin-top: 20%;
+    }
+    select {
+        background-position: 500px;
+    }
+    .icon--brandname {
+        top: 18px;
+        right: 30px;
     }
 }

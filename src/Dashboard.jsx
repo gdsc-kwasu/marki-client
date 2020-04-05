@@ -8,7 +8,7 @@ const Dashboard = () => {
     const [studentName, setStudentName] = useState("");
     return (
         <Container>
-            <Input value={studentName} setStudentName={setStudentName} />
+            <Input value={studentName} setValue={setStudentName} />
             <UserProfile />
             <AttendanceTable />
         </Container>
