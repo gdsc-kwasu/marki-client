@@ -16,7 +16,9 @@ const Input = ({ value, setValue }) => {
                     <option value="Strawberry">Strawberry</option>
                     <option value="Watermelon">Watermelon</option>
                 </datalist>
-                <i className="fas fa-microphone text-primary icon--brand"></i>
+                <button className="icon--brand" type="submit">
+                    <i className="fas fa-microphone text-primary"></i>
+                </button>
             </div>
         </div>
     );

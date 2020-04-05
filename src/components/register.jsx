@@ -40,7 +40,7 @@ export default class Register extends React.Component {
     
     render() {
         return (
-            <div className="container">
+            <div className="container--reg">
             <Background />
                 <div className="register-description">
                     <p className="text-primary">Welcome to Marki!</p>
@@ -80,7 +80,7 @@ export default class Register extends React.Component {
                             <span><i className="fas fa-eye"></i></span>
                         </div>
                         <p className="pwd-details">Let it include lowercase, uppercase and number</p>
-                        <button className="btn btn-primary signUp-btn">Sign up</button>
+                        <button className="btn-reg btn-primary signUp-btn">Sign up</button>
                         <p className="sign-in">
                             Have an account already, <Link to="/login" className="login">login</Link>
                         </p>

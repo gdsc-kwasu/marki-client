@@ -6,6 +6,10 @@
 }
 
 .icon--brand {
+    border-width: 0;
+    background-color: $white;
+    outline: none;
+    cursor: pointer;
     position: absolute;
     right: 25px;
     top: 14px;

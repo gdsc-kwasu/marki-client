@@ -8,7 +8,7 @@ import LOGO from '../images/marki-logo.png'
 
 const Background = () => {
     return (
-        <div className="container">
+        <div className="container--reg">
             <div className="top--brand">
                 <img src={LOGO} className="marki-logo" alt="Marki logo"/>
             </div>
