@@ -11,11 +11,12 @@ export default class Register extends React.Component {
         super();
         this.state = {
             email: '',
-            password: ''
+            password: '',
         }
         this.handleEmailInput = this.handleEmailInput.bind(this)
         this.handlePasswordInput = this.handlePasswordInput.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.togglePassword = this.togglePassword.bind(this)
     }
 
     handleEmailInput(e) {
@@ -68,7 +69,7 @@ export default class Register extends React.Component {
                                 <label For="password">Enter your preferred password</label>
                             </div>
                             <input 
-                                type="password" 
+                                type={this.state.hidden ? "pssword" : "text"} 
                                 name="password" 
                                 id="email" 
                                 className="form--control"
