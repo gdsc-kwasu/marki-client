@@ -10,7 +10,7 @@ export default class Register extends React.Component {
         super();
         this.state = {
             email: '',
-            password: '',
+            password: ''
         }
         this.handleEmailInput = this.handleEmailInput.bind(this)
         this.handlePasswordInput = this.handlePasswordInput.bind(this)
@@ -29,21 +29,30 @@ export default class Register extends React.Component {
         })
     }
 
+    togglePassword() {
+        let pwdField = document.getElementById('password')
+        if (pwdField === 'password') {
+            pwdField.type = 'text'
+        } else {
+            pwdField.type = 'password'
+        }
+    }
+
     handleSubmit(e) {
         e.preventDefault() // prevents the browser from reloading on submit
-        const { email} = this.state
+        const { email } = this.state
         alert(`Welcome 🤝 ${email}`) 
     }
 
     
     render() {
-    
-        const { email } = this.state.email
-        const { password } = this.state.password
+    // destructuring assignment
+        const { email } = this.state
+        const { password } = this.state
 
         return (
             <div className="container--reg">
-            <Background />
+                <Background />
                 <div className="register-description">
                     <p className="text-primary">Welcome to Marki!</p>
                     <div className="brief">
@@ -71,15 +80,20 @@ export default class Register extends React.Component {
                                 <label For="password">Enter your preferred password</label>
                             </div>
                             <input 
-                                type="password"
+                                type='password' 
                                 name="password" 
-                                id="email" 
+                                id="password" 
                                 className="form--control"
                                 value={ password }
                                 onChange={this.handlePasswordInput}
-                                required 
                             />
-                            <span><i className="fas fa-eye"></i></span>
+                            <span 
+                                role="button" 
+                                tabIndex={0} // makes the element tab-able for users that emply virtaul assitants 
+                                onClick={() => {this.togglePassword}} onKeyPress={this.handleKeyPress}
+                            >
+                                <i className="fas fa-eye"></i>
+                            </span>
                         </div>
                         <p className="pwd-details">Let it include lowercase, uppercase and number</p>
                         <input type="button" onClick={this.handleSubmit} className="btn-reg btn-primary signUp-btn" value="Sign up"/>
