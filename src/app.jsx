@@ -5,9 +5,9 @@ import "./styles/app.scss";
 import CourseSelection from './CourseSelection'
 import SearchPage from "./SearchPage";
 import Dashboard from "./Dashboard";
-import Index from './components/index';
+import Index from './components/Index';
 import Notfound from './components/404';
-import Register from './components/register'
+import Register from './components/Register'
 
 const App = () => {
     return (
@@ -15,7 +15,7 @@ const App = () => {
             <Router>
                 <Switch>
                     <Route exact path="/" component={Index} />
-                    <Route exact path="/register" component={Register} />
+                    <Route exact path="/Register" component={Register} />
                     <Route exact path="/courses" component={CourseSelection} />
                     <Route exact path="/search" component={SearchPage} />
                     <Route exact path="/dashboard" component={Dashboard} />

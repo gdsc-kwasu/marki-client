@@ -1,5 +1,5 @@
 import React from 'react' 
-import Background from './background'
+import Background from './Background'
 
 
 const Notfound = () => {
