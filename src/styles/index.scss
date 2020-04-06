@@ -206,21 +206,21 @@ input[type="password"] {
 
     // Register
     .register-description {
-        margin-left: 10%;
+        margin-left: 5%;
         margin-top: -150%;
-        width: 300px;
+        width: 220px;
     }
 
     .register-description .text-primary {
-        margin-left: 1%;
+        margin-left: -2%;
         font-size: 18px;
-        width: 200px;
+        width: 175px;
     }
 
     .register-description .brief {
         width: 250px;
         height: 18px;
-        margin-left: 1%;
+        margin-left: -2%;
         margin-top: -4%;
         font-size: 12px;
         font-weight: normal;
@@ -233,7 +233,7 @@ input[type="password"] {
     form {
         margin-top: 10%;
         width: 100%;
-        margin-left: -13%;
+        margin-left: -15%;
     }
 
     .form--control {
@@ -252,13 +252,13 @@ input[type="password"] {
 
     .label label {
         width: 180px;
-        font-size: 8px;
+        font-size: 12px;
         margin-left: 13%;
         margin-top: 8%;
     }
 
     .sign-in {
-        margin-left: 12%;
+        margin-left: 13%;
         font-size: 11px;
         width: 200px;
     }
@@ -266,7 +266,7 @@ input[type="password"] {
     .pwd-details {
         font-size: 8px;
         margin-left: 13%;
-        margin-top: -2%;
+        margin-top: -7%;
         width: 200px;
     }
 

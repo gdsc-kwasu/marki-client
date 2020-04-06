@@ -30,7 +30,7 @@ export default class Register extends React.Component {
     }
 
     togglePassword() {
-        let pwdField = document.getElementById('password')
+        const pwdField = document.getElementById('password')
         if (pwdField === 'password') {
             pwdField.type = 'text'
         } else {
@@ -87,13 +87,7 @@ export default class Register extends React.Component {
                                 value={ password }
                                 onChange={this.handlePasswordInput}
                             />
-                            <span 
-                                role="button" 
-                                tabIndex={0} // makes the element tab-able for users that emply virtaul assitants 
-                                onClick={() => {this.togglePassword}} onKeyPress={this.handleKeyPress}
-                            >
-                                <i className="fas fa-eye"></i>
-                            </span>
+                            <span role="button" toggle="#password" tabIndex={0} className="fas fas-eye" onClick={this.togglePassword} onKeyPress={this.handleKeyPress}></span>
                         </div>
                         <p className="pwd-details">Let it include lowercase, uppercase and number</p>
                         <input type="button" onClick={this.handleSubmit} className="btn-reg btn-primary signUp-btn" value="Sign up"/>
