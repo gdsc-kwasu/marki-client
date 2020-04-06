@@ -1,7 +1,6 @@
-/* eslint-disable react/button-has-type */
 import React from 'react' 
 import { Link } from 'react-router-dom'
-import Background from './background'
+import Background from './Background'
 
 
 const Index = () => {
@@ -12,9 +11,9 @@ const Index = () => {
                 <p className="text-primary">
                     Time is now for organized row-calls without wahala.
                 </p>
-                <button className="btn btn-primary">
-                    <Link to="/register" className="register">Get started</Link>
-                </button>
+                <Link to="/Register" className="register">
+                    <input type="button" className="btn btn-primary" value="Get started" />
+                </Link>
                 <p className="sign-in">
                     Have an account already, <Link to="/login" className="login">login</Link>
                 </p>

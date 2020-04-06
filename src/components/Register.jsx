@@ -1,9 +1,8 @@
 /* eslint-disable no-alert */
-/* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react' 
 import { Link } from 'react-router-dom'
-import Background from './background'
+import Background from './Background'
 
 
 export default class Register extends React.Component {
@@ -11,12 +10,11 @@ export default class Register extends React.Component {
         super();
         this.state = {
             email: '',
-            password: '',
+            password: ''
         }
         this.handleEmailInput = this.handleEmailInput.bind(this)
         this.handlePasswordInput = this.handlePasswordInput.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
-        this.togglePassword = this.togglePassword.bind(this)
     }
 
     handleEmailInput(e) {
@@ -31,17 +29,30 @@ export default class Register extends React.Component {
         })
     }
 
+    togglePassword() {
+        const pwdField = document.getElementById('password')
+        if (pwdField === 'password') {
+            pwdField.type = 'text'
+        } else {
+            pwdField.type = 'password'
+        }
+    }
+
     handleSubmit(e) {
         e.preventDefault() // prevents the browser from reloading on submit
-        const { email} = this.state
+        const { email } = this.state
         alert(`Welcome 🤝 ${email}`) 
     }
 
     
     render() {
+    // destructuring assignment
+        const { email } = this.state
+        const { password } = this.state
+
         return (
             <div className="container--reg">
-            <Background />
+                <Background />
                 <div className="register-description">
                     <p className="text-primary">Welcome to Marki!</p>
                     <div className="brief">
@@ -59,7 +70,7 @@ export default class Register extends React.Component {
                                 name="email" 
                                 id="email" 
                                 className="form--control"
-                                value={this.state.email}
+                                value={ email }
                                 onChange={this.handleEmailInput}
                                 required 
                             />
@@ -69,18 +80,17 @@ export default class Register extends React.Component {
                                 <label For="password">Enter your preferred password</label>
                             </div>
                             <input 
-                                type={this.state.hidden ? "pssword" : "text"} 
+                                type='password' 
                                 name="password" 
-                                id="email" 
+                                id="password" 
                                 className="form--control"
-                                value={this.state.password}
+                                value={ password }
                                 onChange={this.handlePasswordInput}
-                                required 
                             />
-                            <span><i className="fas fa-eye"></i></span>
+                            <span role="button" toggle="#password" tabIndex={0} className="fas fas-eye" onClick={this.togglePassword} onKeyPress={this.handleKeyPress}></span>
                         </div>
                         <p className="pwd-details">Let it include lowercase, uppercase and number</p>
-                        <button className="btn-reg btn-primary signUp-btn">Sign up</button>
+                        <input type="button" onClick={this.handleSubmit} className="btn-reg btn-primary signUp-btn" value="Sign up"/>
                         <p className="sign-in">
                             Have an account already, <Link to="/login" className="login">login</Link>
                         </p>
