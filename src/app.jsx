@@ -8,6 +8,7 @@ import Dashboard from "./Dashboard";
 import Index from './components/Index';
 import Notfound from './components/404';
 import Register from './components/Register'
+import Login from './components/Login';
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
                 <Switch>
                     <Route exact path="/" component={Index} />
                     <Route exact path="/Register" component={Register} />
+                    <Route exact path="/Login" component={Login} />
                     <Route exact path="/courses" component={CourseSelection} />
                     <Route exact path="/search" component={SearchPage} />
                     <Route exact path="/dashboard" component={Dashboard} />

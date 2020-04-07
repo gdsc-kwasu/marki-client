@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import Background from './Background'
 
 
-export default class Register extends React.Component {
+export default class Login extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -38,12 +38,6 @@ export default class Register extends React.Component {
         }
     }
 
-    handleSubmit(e) {
-        e.preventDefault() // prevents the browser from reloading on submit
-        const { email } = this.state
-        alert(`Welcome 🤝 ${email}`) 
-    }
-
     
     render() {
     // destructuring assignment
@@ -54,10 +48,10 @@ export default class Register extends React.Component {
             <div className="container--reg">
                 <Background />
                 <div className="register-description">
-                    <p className="text-primary">Welcome to Marki!</p>
+                    <p className="text-primary">Welcome back to Marki!</p>
                     <div className="brief">
                         <p>
-                            Now you'll be able to mark attendance at your class and events with no stress.
+                            Glad to have you back. Do reach out to the team for inquiries, complaints and suggestions. You are appreciated.
                         </p>
                     </div>
                     <form action="" method="POST" onSubmit={this.handleSubmit}>
@@ -77,7 +71,7 @@ export default class Register extends React.Component {
                         </div>
                         <div className="password">
                             <div className="label-for-password label">
-                                <label For="password">Enter your preferred password</label>
+                                <label For="password">Enter your password</label>
                             </div>
                             <input 
                                 type='password' 
@@ -89,10 +83,9 @@ export default class Register extends React.Component {
                             />
                             <span role="button" toggle="#password" tabIndex={0} className="fas fa-eye" onClick={this.togglePassword} onKeyPress={this.handleKeyPress}></span>
                         </div>
-                        <p className="pwd-details">Let it include lowercase, uppercase and number</p>
-                        <input type="button" onClick={this.handleSubmit} className="btn-reg btn-primary signUp-btn" value="Sign up"/>
+                        <input type="button" className="btn-reg btn-primary signIn-btn" value="Sign up"/>
                         <p className="sign-in">
-                            Have an account already, <Link to="/Login" className="login">login</Link>
+                            Don't have an account? <Link to="/Register" className="login">Get started</Link>
                         </p>
                     </form>
                 </div>
