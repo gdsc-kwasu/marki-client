@@ -30,11 +30,11 @@ export default class Register extends React.Component {
     }
 
     togglePassword() {
-        const pwdField = document.getElementById('password')
-        if (pwdField === 'password') {
-            pwdField.type = 'text'
+        this.pwdField = document.getElementById('password')
+        if (this.pwdField === 'password') {
+            this.pwdField.type = 'text'
         } else {
-            pwdField.type = 'password'
+            this.pwdField.type = 'password'
         }
     }
 
@@ -87,7 +87,7 @@ export default class Register extends React.Component {
                                 value={ password }
                                 onChange={this.handlePasswordInput}
                             />
-                            <span role="button" toggle="#password" tabIndex={0} className="fas fas-eye" onClick={this.togglePassword} onKeyPress={this.handleKeyPress}></span>
+                            <span role="button" toggle="#password" tabIndex={0} className="fas fa-eye" onClick={this.togglePassword} onKeyPress={this.handleKeyPress}></span>
                         </div>
                         <p className="pwd-details">Let it include lowercase, uppercase and number</p>
                         <input type="button" onClick={this.handleSubmit} className="btn-reg btn-primary signUp-btn" value="Sign up"/>
