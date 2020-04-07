@@ -47,6 +47,14 @@
     align-items: center;
     margin-bottom: 5px;
 }
+
+.brand--icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
 .logo {
     width: 35px;
     height: 35px;
@@ -97,6 +105,10 @@
     .view--height__max {
         height: 90vh;
     }
+    .brand--icon {
+        margin-left: 80px;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -121,5 +133,8 @@
         width: 100%;
         flex: 0 0 50%;
         position: relative;
+    }
+    .brand--icon {
+        margin-left: 150px;
     }
 }

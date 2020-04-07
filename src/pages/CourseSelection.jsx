@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import Container from "./components/Container";
+import DashboardContainer from "../components/DashboardContainer";
 
 const CourseSelection = () => {
     const [course, setCourse] = useState("");
     const [student, setStudent] = useState("");
 
     return (
-        <Container>
+        <DashboardContainer>
             <div className="selection--container z-index">
                 <div className="form-group my">
                     <select
                         name="course"
                         id="course"
-                        className="text-primary form-control form--large"
+                        className="text-primary form-control form--large shadow"
                         value={course}
                         onChange={(e) => setCourse(e.target.value)}
                         onBlur={(e) => setCourse(e.target.value)}
@@ -25,7 +25,7 @@ const CourseSelection = () => {
                 <div className="form-group my">
                     <input
                         type="text"
-                        className="form-control form--large"
+                        className="form-control form--large shadow"
                         list="names"
                         placeholder="Search Student"
                         value={student}
@@ -36,7 +36,7 @@ const CourseSelection = () => {
                     </button>
                 </div>
             </div>
-        </Container>
+        </DashboardContainer>
     );
 };
 

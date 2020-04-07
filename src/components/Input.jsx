@@ -6,12 +6,13 @@ const Input = ({ value, setValue }) => {
             <div className="form-group">
                 <input
                     type="text"
-                    className="form-control border-radius datalist"
+                    className="form-control border-radius shadow datalist"
                     list="names"
                     placeholder="Search Student"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                 />
+
                 <datalist id="names">
                     <option value="Strawberry">Strawberry</option>
                     <option value="Watermelon">Watermelon</option>

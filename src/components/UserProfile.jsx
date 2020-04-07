@@ -12,7 +12,7 @@ const UserProfile = () => {
                     className="user--avatar justify-item-center"
                 />
                 <h4 className="text-center user--name">Adewole Kemisola</h4>
-                <p className="text-center">
+                <p className="text-center font-weight-normal">
                     Computer Science <br />
                     300L
                 </p>
@@ -20,7 +20,7 @@ const UserProfile = () => {
             <div className="horizontal-rule"></div>
             <div className="section px">
                 <h4 className="user--name">Section</h4>
-                <p className="mt">Web Dev</p>
+                <p className="mt font-weight-normal">Web Dev</p>
             </div>
             <div className="horizontal-rule"></div>
             <button

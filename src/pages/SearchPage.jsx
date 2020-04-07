@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Container from "./components/Container";
-import Input from "./components/Input";
+import DashboardContainer from "../components/DashboardContainer";
+import Input from "../components/Input";
 
 const SearchPage = () => {
     const [search, setSearch] = useState("");
 
     return (
-        <Container>
+        <DashboardContainer>
             <Input value={search} setValue={setSearch} />
-        </Container>
+        </DashboardContainer>
     );
 };
 

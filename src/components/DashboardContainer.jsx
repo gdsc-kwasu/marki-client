@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../images/logo.png";
 import Marki from "../images/marki.png";
 
-const Container = ({ children }) => {
+const DashboardContainer = ({ children }) => {
     return (
         <React.Fragment>
             <div className="container bg-dark vh-100">
@@ -24,4 +24,4 @@ const Container = ({ children }) => {
     );
 };
 
-export default Container;
+export default DashboardContainer;

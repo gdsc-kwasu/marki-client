@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import Container from "./components/Container";
-import AttendanceTable from "./components/AttendanceTable";
-import Input from "./components/Input";
-import UserProfile from './components/UserProfile'
+import DashboardContainer from "../components/DashboardContainer";
+import AttendanceTable from "../components/AttendanceTable";
+import Input from "../components/Input";
+import UserProfile from '../components/UserProfile'
 
 const Dashboard = () => {
     const [studentName, setStudentName] = useState("");
     return (
-        <Container>
+        <DashboardContainer>
             <Input value={studentName} setValue={setStudentName} />
             <UserProfile />
             <AttendanceTable />
-        </Container>
+        </DashboardContainer>
     );
 };
 
