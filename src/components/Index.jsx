@@ -17,7 +17,7 @@ const Index = () => {
                     </button>
                     <h2 className="font-weight-normal">
                         Have an account already,
-                        <a href="#" className="text-primary">
+                        <a href="x" className="text-primary">
                             Sign in
                         </a>
                     </h2>
