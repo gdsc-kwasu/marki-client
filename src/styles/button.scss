@@ -1,9 +1,9 @@
 .btn {
-    width: 571.61px;
+    width: 300px;
     height: 50px;
     border-radius: 10px;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: Montserrat;
     color: $dark;
     background-color: transparent;
@@ -30,7 +30,6 @@
 .btn-outline-secondary {
     border: 1px solid $secondary;
     color: $secondary;
-
 }
 
 .btn-primary {
@@ -42,7 +41,6 @@
         background-color: darken($color: $primary, $amount: 3);
         border-color: lighten($color: $primary, $amount: 7);
     }
-
 }
 
 .btn-secondary {
@@ -53,5 +51,27 @@
         border-width: 2px;
         background-color: darken($color: $secondary, $amount: 7);
         border-color: lighten($color: $secondary, $amount: 5);
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .btn {
+        width: 420px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .btn-md {
+        width: 550px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .btn-lg {
+        width: 572px;
+        height: 71px;
+        font-weight: 600;
+        font-size: 2em;
     }
 }

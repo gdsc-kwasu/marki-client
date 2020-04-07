@@ -8,7 +8,7 @@ const Container = ({ children }) => {
             <div className="container bg-dark vh-100">
                 <div className="row">
                     <div className="position--absolute">Marki.io</div>
-                    <div className="col-12 col-md-8 col-lg-6 view--height__max bg-white shadow shadow-sm-none">
+                    <div className="col-12 col-md-8 col-lg-6 view--height__max bg-white pos-abs overflow shadow shadow-sm-none">
                         <div className="outer-circle"></div>
                         <div className="inner-circle"></div>
                         <div className="innermost-circle"></div>
