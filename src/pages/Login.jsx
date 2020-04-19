@@ -19,7 +19,7 @@ const Login = () => {
                     Enter your email
                     <input
                         type="email"
-                        className="form-control form--large border-radius mt form-md"
+                        className="form-control border-radius mt"
                         id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
@@ -31,7 +31,7 @@ const Login = () => {
                     Enter your preferred password
                     <input
                         type="password"
-                        className="form-control form--large border-radius mt form-md"
+                        className="form-control border-radius mt"
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}

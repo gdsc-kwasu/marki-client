@@ -17,7 +17,7 @@ const Index = () => {
                 </h1>
                 <Link to="./register">
                     <button
-                        className="btn btn-primary btn-lg btn-md"
+                        className="btn btn-primary"
                         type="submit"
                     >
                         Get Started

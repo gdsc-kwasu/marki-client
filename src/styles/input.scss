@@ -1,6 +1,6 @@
 .form-control {
     width: 350px;
-    height: 50px;
+    height: 60px;
     border: 1px solid $primary;
     color: $dark;
     padding: 10px 50px 10px 30px;
@@ -14,14 +14,12 @@
     }
 }
 
-.datalist::-webkit-calendar-picker-indicator {
-    display: none;
+.h-50 {
+    height: 50px;
 }
 
-.form--large {
-    height: 60px;
-    padding: 10px 50px 10px 30px;
-    font-size: 16px;
+.datalist::-webkit-calendar-picker-indicator {
+    display: none;
 }
 
 .form-group {
@@ -41,21 +39,20 @@ label {
 
 @media screen and (min-width: 768px) {
     .form-control {
-        width: 380px;
+        width: 550px;
     }
     .form-md {
-        width: 550px;
+        width: 380px;
     }
 }
 
 @media screen and (min-width: 992px) {
     .form-control {
-        width: 550px;
+        width: 572px;
+        height: 71px;
         font-size: 1em;
     }
-
-    .form--large {
-        height: 71px;
-        width: 572px;
+    .h-50 {
+        height: 50px;
     }
 }

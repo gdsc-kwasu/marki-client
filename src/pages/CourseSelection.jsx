@@ -12,7 +12,7 @@ const CourseSelection = () => {
                     <select
                         name="course"
                         id="course"
-                        className="text-primary form-control form--large shadow"
+                        className="text-primary form-control form-md shadow"
                         value={course}
                         onChange={(e) => setCourse(e.target.value)}
                         onBlur={(e) => setCourse(e.target.value)}
@@ -25,7 +25,7 @@ const CourseSelection = () => {
                 <div className="form-group my">
                     <input
                         type="text"
-                        className="form-control form--large shadow"
+                        className="form-control form-md shadow"
                         list="names"
                         placeholder="Search Student"
                         value={student}

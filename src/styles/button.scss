@@ -58,21 +58,34 @@
     .btn {
         width: 500px;
     }
-}
-
-@media screen and (min-width: 768px) {
-    .btn-md {
-        width: 550px;
-        height: 65px;
+    .btn-sm {
+        width: 250px;
+        height: 40px;
     }
 }
 
+@media screen and (min-width: 768px) {
+    .btn {
+        width: 550px;
+        height: 65px;
+    }
+    .btn-sm {
+        width: 250px;
+        height: 40px;
+    }
+}
 
 @media screen and (min-width: 992px) {
-    .btn-lg {
+    .btn {
         width: 572px;
         height: 71px;
         font-weight: 600;
         font-size: 2em;
+    }
+    .btn-sm {
+        width: 250px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 1.5em;
     }
 }

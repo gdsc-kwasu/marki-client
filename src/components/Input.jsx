@@ -6,7 +6,7 @@ const Input = ({ value, setValue }) => {
             <div className="form-group">
                 <input
                     type="text"
-                    className="form-control border-radius shadow datalist"
+                    className="form-control form-md h-50 border-radius shadow datalist"
                     list="names"
                     placeholder="Search Student"
                     value={value}
